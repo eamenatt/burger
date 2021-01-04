@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talysh/burger.git"
+    "url": "git+https://github.com/eamenatt/burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/talysh/burger/issues"
+    "url": "https://github.com/eamenatt/burger/issues"
   },
-  "homepage": "https://github.com/talysh/burger#readme",
+  "homepage": "https://github.com/eamenatt/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
