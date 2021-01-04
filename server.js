@@ -4,18 +4,22 @@ const app = express();
 
 app.use(express.static("public"));
 
-// Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Set Handlebars.
+
+
+//Handlebars
 const exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Import routes
-const routes = require("./controller/controllers.js");
+
+
+
+// Routes
+const routes = require("./controllers/burgers_controllers.js");
 
 app.use(routes);
 

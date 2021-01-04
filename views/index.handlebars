@@ -1,0 +1,52 @@
+<h1 class="text-center burger">Eat-Da-Burger!</h1>
+
+</div class="center">
+<form class="create-form">
+  <h2 class="add-burger-text">Input your Burger order below</h2>
+  <div class="form-group">
+    <input type="text" id="burgerOrder" class="center" name="name" placeholder="Enter Burger Name Here">
+    
+  </div>
+   <button type="submit" class="center add-burger btn btn-success" id="orderBtn">Order Burger</button>
+
+  <hr class="divider">
+
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Ready to Go!</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+
+        <li>
+          <p>{{this.burger_name}}</p>
+          <button class="devour-button" data-id="{{this.id}}">EAT THIS BURGER!</button>
+        </li>
+
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-lg-6">
+      <h2>Already Eaten</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+
+        <li>
+          <p>{{this.burger_name}}</p>
+          <button class="trash-button btn-danger" data-id="{{this.id}}">Trash</button>
+        </li>
+
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+
+
+
+   
+</form>
