@@ -1,6 +1,4 @@
-// When dynamically generated devour buttons are clicked
-
-$(document).on("click", ".devour-button", function () {
+$(document).on("click", ".eat-button", function () {
     const id = $(this).data('id');
     console.log(id);
     $.ajax({
@@ -11,8 +9,6 @@ $(document).on("click", ".devour-button", function () {
     });
 
 });
-
-// When dynamically generated throw leftovers buttons are clicked
 
 $(document).on("click", ".trash-button", function () {
     const id = $(this).data('id');
@@ -26,7 +22,6 @@ $(document).on("click", ".trash-button", function () {
 });
 
 
-// Generate a burger
 $('.add-burger').click(function (event) {
     event.preventDefault();
     const burgerName = $('#burgerOrder').val().trim();

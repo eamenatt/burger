@@ -7,7 +7,7 @@
     <input type="text" id="burgerOrder" class="center" name="name" placeholder="Enter Burger Name Here">
     
   </div>
-   <button type="submit" class="center add-burger btn btn-success" id="orderBtn">Order Burger</button>
+   <button type="submit" class="center add-burger" id="orderBtn">Order Burger</button>
 
   <hr class="divider">
 
@@ -21,7 +21,7 @@
 
         <li>
           <p>{{this.burger_name}}</p>
-          <button class="devour-button" data-id="{{this.id}}">EAT THIS BURGER!</button>
+          <button class="eat-button btn-success" data-id="{{this.id}}">EAT THIS BURGER!</button>
         </li>
 
         {{/unless}}
